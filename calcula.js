@@ -3,5 +3,5 @@ function sumar(){
     let dos=document.getElementById("n2");
     let myTotal=document.getElementById("total");
     let laSuma=parseInt(uno.value) + parseInt(dos.value);
-    myTotal.innerText="El resultado es: "+ laSuma;
+    myTotal.innerText="El Resultado es: "+ laSuma;
 }
