@@ -6,3 +6,10 @@ body {
 #resultH2{
     color: blue;
 }
+
+.main{
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0px 10px 0px;
+}
