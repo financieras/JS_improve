@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./blackscholes.js"></script>
+    <title>Black-Scholes</title>
+</head>
+<body>
+    <h1>Black-Scholes</h1>
+    <p>Valor de una opción CALL europea por el método de Black-Scholes.</p>
+    <h2>Variables de entrada</h2>
+    <ul>
+        <li>Precio Spot del activo subyacente: S <input type="number" value="100" id="S"></li>
+        <li>Precio de ejercicio (Strike): E <input type="number" value="110" id="E"></li>
+        <li>Volatilidad (en tanto por uno): &sigma; <input type="number" value="0.2" id="sigma"> </li>
+        <li>Rentabilidad libre de riesgo:<br>
+        Tanto efectivo anual en tanto por uno: <i>i</i> <input type="number" value="0.07" id="tanto"></li>
+        <li>Duración hasta vencimiento en años: T <input type="number" value="2" id="T"> </li>
+    </ul>
+    <p>Pulse el botón para obtener el precio teórico de un CALL europeo.</p>
+    <input type="button" value="CALL por Black-Scholes" onclick="CALLeuropea()">
+    <h2 id="resultH2">Resultado</h2>
+    <p id="total"></p>
+</body>
+</html>
