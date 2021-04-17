@@ -36,5 +36,5 @@ function CALLeuropea(){
     let d1 = (Math.log(S/E)+(r+sigma**2/2)*T)/(sigma*Math.sqrt(T));
     let d2 = (Math.log(S/E)+(r-sigma**2/2)*T)/(sigma*Math.sqrt(T));
     let primaCALL=S*Normal(d1)-E*Math.E**(-r*T)*Normal(d2);
-    myTotal.innerText="El prima estimada del CALL es: "+ primaCALL;
+    myTotal.innerText="La prima estimada del CALL es: "+ primaCALL;
 }
